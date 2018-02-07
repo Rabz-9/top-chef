@@ -1,0 +1,13 @@
+{
+  "id" : 1,
+  "name" : "Bell's Kitchen",
+  "adresses" : {
+    "street" : "52 rue Piat",
+    "city" : "Paris",
+    "cp" : 75020,
+    "country" : "France"
+  },
+  "discount" : "-30% sur la carte",
+  "feedback" : "9.5/10",
+  "average_price" : "15€"
+}

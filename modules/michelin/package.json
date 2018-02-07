@@ -1,0 +1,23 @@
+{
+  "id": 1,
+  "name": "Le Jardin des Remparts",
+  "website": "https://restaurant.michelin.fr/28u6ql7/le-jardin-des-remparts-beaune",
+  "adresses": {
+    "street": "10 rue Hôtel-Dieu",
+    "cp": 21200,
+    "city": "Beaune"
+  },
+  "chief": "Christophe Bocquillon",
+  "stars": 1,
+  "description": "Dans cette élégante villa bourgeoise des années 1930, au pied des remparts, le jeune chef, Christophe Bocquillon, signe une cuisine tout en netteté et saveurs, où les meilleurs produits de saison dévoilent des accords originaux. Aux beaux jours, sachez que la terrasse est l'une des plus prisées de Beaune !",
+  "feedback" : {
+    "average" : 4.3,
+    "quality" : 4.2,
+    "service" : 4.4,
+    "surroundings" : 4.4,
+    "ambience" : 4.5
+  },
+  "speciality" : ["Boule d'escargot de Bourgogne" , "beurre d'ail frit" , "Pain d’épice perdu" , "cassis et sirop de vin rouge"],
+  "language" : ["Anglais" , "Espagnol"],
+  "telephone": "03 80 24 79 41",
+}
