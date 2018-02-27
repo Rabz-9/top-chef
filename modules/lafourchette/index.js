@@ -7,6 +7,7 @@ var restaurant = data.split("\n");
 var contents = [];
 var idFork = 0;
 var hadDiscount = false;
+var promo = [];
 
 for (var i = 0; i < restaurant.length - 1; i++) {
   contents[i] = JSON.parse(restaurant[i]);
@@ -18,69 +19,65 @@ function getIDFork() {
     var url = "https://m.lafourchette.com/api/restaurant-prediction?name=" + encodeURIComponent(search)
     let postalCode = contents[i].postalCode
     request({
-        uri: url,
-      }, function(error, response, body) {
-        const $ = cheerio.load(body);
-        results = JSON.parse($.text().trim());
-        idFork = getIdResults(postalCode);
-        restaurant = new Object();
-        //console.log(search + idFork);
-        restaurant.id = idFork;
-        restaurant.name = search;
-        restaurant.promotions = [];
-        let promo = [];
-          request({
-            uri: "https://m.lafourchette.com/api/restaurant/" + idFork + "/sale-type",
-          }, function(error, response, body) {
-            const $ = cheerio.load(body);
-            resultsSales = JSON.parse($.text().trim());
-            let j = 0;
-            if (idFork != undefined) {
-              for (var i = 0; i < resultsSales.length; i++) {
-                if (resultsSales[i]["exclusions"] != "" && resultsSales[i].hasOwnProperty("exclusions")) {
-                    promo[j] = resultsSales[i]["title"];
-                    console.log("Promo dans le tableau : " + promo[j]);
-                    j = j+1
-
-                }
-                // if(resultsSales[i]["exclusions"] != "" && resultsSales[i].hasOwnProperty("exclusions"))
-                // {
-                //     hadDiscount = true;
-                //     restaurant.promotions={};
-                //     restaurant.promotions[j]["title"] = resultsSales[i]["title"];
-                //     restaurant.promotions[j]["exclusions"] = resultsSales[i]["exclusions"];
-                //     j = j+1;
-                // }
-              }
-            }
-          });
-          // const document = JSON.stringify(restaurant);
-          // fs.appendFileSync("./RestaurantFork.json", document + "\r\n", null, 'utf8', (err) => {
-          //   if (err) console.log(err)
-          // });
-
-          // ///  idFork = callback(contents[i].postalCode);
-        });
-    }
-  }
-
-  function getIdResults(postal_code) {
-    for (var i = 0; i < results.length; i++) {
-      if (results[i].address.postal_code == postal_code) {
-        return results[i].id;
-      }
-    }
-  }
-
-  getIDFork();
-
-
-  function getDeals() {
-    var url = "https://m.lafourchette.com/api/restaurant/4546/sale-type";
-    request({
       uri: url,
     }, function(error, response, body) {
       const $ = cheerio.load(body);
-      let test = JSON.parse()
-    })
+      results = JSON.parse($.text().trim());
+      idFork = getIdResults(postalCode);
+      restaurant = new Object();
+      restaurant.idFork = idFork;
+      restaurant.name = search;
+      let tab = [];
+      let hasPromo = false; // ///  idFork = callback(contents[i].postalCode);
+      if (idFork != undefined) {
+        tab = getDeals(idFork, search, restaurant);
+        writeDiscount(restaurant, tab);
+      }
+    });
   }
+}
+
+function getIdResults(postal_code) {
+  for (var i = 0; i < results.length; i++) {
+    if (results[i].address.postal_code == postal_code) {
+      return results[i].id;
+    }
+  }
+}
+
+function getDeals(idFork, name, restaurant) {
+  let promo = [];
+  request({
+    uri: "https://m.lafourchette.com/api/restaurant/" + idFork + "/sale-type",
+  }, function(error, response, body) {
+    const $ = cheerio.load(body);
+    resultsSales = JSON.parse($.text().trim());
+    if (idFork != undefined) {
+      promo = addDeals(resultsSales, promo);
+      if (promo.length != 0) {
+        console.log("{IdFork : " + idFork + "\nName Starred Restaurant : "  + name + " \nPromo :"  + promo + "}\n");
+      }
+    }
+    return promo;
+  });
+}
+
+function addDeals(resultsSales, promo) {
+  for (var i = 0; i < resultsSales.length; i++) {
+    if (resultsSales[i]["exclusions"] != "" && resultsSales[i].hasOwnProperty("exclusions")) {
+      promo.push(resultsSales[i]["title"]);
+    }
+  }
+  return promo;
+}
+
+function writeDiscount(restaurant, promo) {
+  restaurant.promotions = [];
+  restaurant.promotions = promo;
+  const document = JSON.stringify(restaurant);
+  fs.appendFileSync("./RestaurantFork.json", document + "\r\n", null, 'utf8', (err) => {
+    if (err) console.log(err)
+  });
+}
+
+getIDFork();
