@@ -1,0 +1,121 @@
+[{
+  "idFork": "713",
+  "name": "L'Arôme",
+  "promotions": ["Menu Mardis Gourmands 139€"],
+  "stars": 1
+}, {
+  "idFork": "26201",
+  "name": "Auguste",
+  "promotions": ["Gourmand Menu 118€ All inclusive"],
+  "stars": 1
+}, {
+  "idFork": "269585",
+  "name": "La Scène Thélème",
+  "promotions": ["-50% off the \"à la carte\" menu!", "-30% off the \"à la carte\" menu!", "-20% off the \"à la carte\" menu!"],
+  "stars": 1
+}, {
+  "idFork": "250",
+  "name": "Lasserre",
+  "promotions": ["Menu Mardis Gourmands 150€"],
+  "stars": 1
+}, {
+  "idFork": "310489",
+  "name": "Laurent",
+  "promotions": ["-30% off the \"à la carte\" menu!", "-20% off the \"à la carte\" menu!"],
+  "stars": 1
+}, {
+  "idFork": "36448",
+  "name": "Penati al Baretto",
+  "promotions": ["-20% off the \"à la carte\" menu!"],
+  "stars": 1
+}, {
+  "idFork": "60777",
+  "name": "1912",
+  "promotions": ["20% off food"],
+  "stars": 1
+}, {
+  "idFork": "346045",
+  "name": "Yam'Tcha",
+  "promotions": ["-20% off the \"à la carte\" menu!"],
+  "stars": 1
+}, {
+  "idFork": "5020",
+  "name": "La Fourchette du Printemps",
+  "promotions": ["Menu Gourmands 79€"],
+  "stars": 1
+}, {
+  "idFork": "221",
+  "name": "Le France",
+  "promotions": ["-20% off the \"à la carte\" menu!"],
+  "stars": 1
+}, {
+  "idFork": "9228",
+  "name": "Le Baudelaire",
+  "promotions": ["-20% off the \"à la carte\" menu!", "Menu Gourmands 130€"],
+  "stars": 1
+}, {
+  "idFork": "297223",
+  "name": "Le Restaurant",
+  "promotions": ["-30% off the \"à la carte\" menu!"],
+  "stars": 1
+}, {
+  "idFork": "682",
+  "name": "L'Oasis",
+  "promotions": ["-20% off the \"à la carte\" menu!", "Menu Mardis Gourmands 125€"],
+  "stars": 2
+}, {
+  "idFork": "205737",
+  "name": "Le Violon d'Ingres",
+  "promotions": ["Menu \"Prestige\""],
+  "stars": 1
+}, {
+  "idFork": "25896",
+  "name": "Benoit",
+  "promotions": ["Menu Mardis Gourmands 125€"],
+  "stars": 1
+}, {
+  "idFork": "2828",
+  "name": "Le Chiberta",
+  "promotions": ["Menu Découverte 110€"],
+  "stars": 1
+}, {
+  "idFork": "12900",
+  "name": "Pierre Orsi",
+  "promotions": ["Menu Mardis Gourmands 150€"],
+  "stars": 1
+}, {
+  "idFork": "275",
+  "name": "Le Meurice Alain Ducasse",
+  "promotions": ["Menu Prestige 225€"],
+  "stars": 2
+}, {
+  "idFork": "122",
+  "name": "La Grande Cascade",
+  "promotions": ["-40% off the \"à la carte\" menu"],
+  "stars": 1
+}, {
+  "idFork": "405",
+  "name": "Maison Rostang",
+  "promotions": ["Menu Prestige 115€ Tout Compris, le midi !", "Menu Prestige 195€ Tout Compris, le soir !"],
+  "stars": 2
+}, {
+  "idFork": "28557",
+  "name": "La Grange de Belle-Église",
+  "promotions": ["-30% sur la carte"],
+  "stars": 1
+}, {
+  "idFork": "2185",
+  "name": "Antoine",
+  "promotions": ["Menu Mardis Gourmands 109€"],
+  "stars": 1
+}, {
+  "idFork": "3485",
+  "name": "Manoir de la Boulaie",
+  "promotions": ["-20% off the \"à la carte\" menu"],
+  "stars": 2
+}, {
+  "idFork": "11295",
+  "name": "Qui plume la Lune",
+  "promotions": ["Menu lunch prestige 90€ tout compris"],
+  "stars": 1
+}]

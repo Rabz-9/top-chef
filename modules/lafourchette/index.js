@@ -16,6 +16,7 @@ for (var i = 0; i < restaurant.length - 1; i++) {
 function getIDFork() {
   for (var i = 0; i < contents.length; i++) {
     let search = contents[i].name;
+    let stars = contents[i].stars;
     var url = "https://m.lafourchette.com/api/restaurant-prediction?name=" + encodeURIComponent(search)
     let postalCode = contents[i].postalCode
     request({
@@ -24,14 +25,11 @@ function getIDFork() {
       const $ = cheerio.load(body);
       results = JSON.parse($.text().trim());
       idFork = getIdResults(postalCode);
-      restaurant = new Object();
-      restaurant.idFork = idFork;
-      restaurant.name = search;
       let tab = [];
       let hasPromo = false; // ///  idFork = callback(contents[i].postalCode);
       if (idFork != undefined) {
-        tab = getDeals(idFork, search, restaurant);
-        writeDiscount(restaurant, tab);
+        getDeals(idFork, search , stars);
+
       }
     });
   }
@@ -45,7 +43,7 @@ function getIdResults(postal_code) {
   }
 }
 
-function getDeals(idFork, name, restaurant) {
+function getDeals(idFork, name, stars) {
   let promo = [];
   request({
     uri: "https://m.lafourchette.com/api/restaurant/" + idFork + "/sale-type",
@@ -55,29 +53,28 @@ function getDeals(idFork, name, restaurant) {
     if (idFork != undefined) {
       promo = addDeals(resultsSales, promo);
       if (promo.length != 0) {
-        console.log("{IdFork : " + idFork + "\nName Starred Restaurant : "  + name + " \nPromo :"  + promo + "}\n");
+        console.log("{IdFork : " + idFork + "\nName Starred Restaurant : " + name + " \nPromo :" + promo + "}\n");
+        restaurant = new Object();
+        restaurant.idFork = idFork;
+        restaurant.name = name;
+        restaurant.promotions = promo;
+        restaurant.stars = stars;
+        const document = JSON.stringify(restaurant);
+        fs.appendFileSync("./RestaurantFork.json", document + "\r\n", null, 'utf8', (err) => {
+          if (err) console.log(err)
+        });
       }
     }
-    return promo;
   });
 }
 
 function addDeals(resultsSales, promo) {
   for (var i = 0; i < resultsSales.length; i++) {
-    if (resultsSales[i]["exclusions"] != "" && resultsSales[i].hasOwnProperty("exclusions")) {
-      promo.push(resultsSales[i]["title"]);
+    if (resultsSales[i]["exclusions"] != "" && resultsSales[i].hasOwnProperty("exclusions") && resultsSales[i]["is_special_offer"] == true) {
+      promo.push(resultsSales[i]["title"].trim());
     }
   }
   return promo;
-}
-
-function writeDiscount(restaurant, promo) {
-  restaurant.promotions = [];
-  restaurant.promotions = promo;
-  const document = JSON.stringify(restaurant);
-  fs.appendFileSync("./RestaurantFork.json", document + "\r\n", null, 'utf8', (err) => {
-    if (err) console.log(err)
-  });
 }
 
 getIDFork();
