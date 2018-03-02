@@ -1,11 +1,10 @@
 import React, {
   Component
 } from 'react';
-import logo from './fork.png';
 import tag from './tag.png';
 import './App.css';
 import RestaurantFork from './RestaurantForkWithPicture.json';
-import MasonryInfiniteScroller from 'react-masonry-infinite';
+
 class App extends Component {
 
    displayStars(nbStars){
