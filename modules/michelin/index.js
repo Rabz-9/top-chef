@@ -32,7 +32,7 @@ function getRestaurant() {
           var title = $(this).find(".poi_card-display-title").text().trim();
           var url = link.attr("href");
 
-          fs.appendFileSync("./LinkRestaurants.txt", "https://restaurant.michelin.fr" + url + "\r\n", null, 'utf8', (err) => {
+          fs.appendFileSync("./LinkRestaurants2018.txt", "https://restaurant.michelin.fr" + url + "\r\n", null, 'utf8', (err) => {
             if (err) console.log(err)
 
           });
@@ -58,9 +58,9 @@ function getNumberOfStars(iconName) {
 }
 
 function getDescription() {
-  var contents = fs.readFileSync("./LinkRestaurants.txt", "utf8");
+  var contents = fs.readFileSync("./LinkRestaurants2018.txt", "utf8");
   var line = contents.split("\n");
-  for (var i = 0; i <line.length - 1; i++) {
+  for (var i = 560; i <614; i++) {
     request({
       uri: line[i],
     }, function(error, response, body) {
@@ -73,10 +73,10 @@ function getDescription() {
         restaurant.street = $(".poi_intro-display-address").find(".thoroughfare").text().trim();
         restaurant.postalCode = $(".poi_intro-display-address").find(".postal-code").text().trim();
         restaurant.city = $(".poi_intro-display-address").find(".locality").text().trim();
-
+        restaurant.picture = $(".landscape").attr("data-src");
         const document = JSON.stringify(restaurant);
 
-        fs.appendFileSync("./RestaurantsInfo.json", document + "\r\n", null, 'utf8', (err) => {});
+        fs.appendFileSync("./RestaurantsInfoTest.json", document + "\r\n", null, 'utf8', (err) => {});
 
       } else {
         console.log(error);
@@ -86,3 +86,5 @@ function getDescription() {
   }
 }
 getDescription();
+
+//getRestaurant();

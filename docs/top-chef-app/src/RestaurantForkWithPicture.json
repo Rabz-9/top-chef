@@ -1,0 +1,176 @@
+[{
+    "idFork": "269585",
+    "name": "La Scène Thélème",
+    "promotions": ["-50% off the \"à la carte\" menu! /", " -30% off the \"à la carte\" menu! /" , "-20% off the \"à la carte\" menu!"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/Sc%C3%A8ne%20Th%C3%A9l%C3%A8me%202.jpg?itok=anQ7iLE-"
+  },
+  {
+    "idFork": "250",
+    "name": "Lasserre",
+    "promotions": ["Menu Mardis Gourmands 150€"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/VEQUylIVHsofv7og.jpg?itok=v17Dntuz"
+  },
+  {
+    "idFork": "275457",
+    "name": "Armani Ristorante",
+    "promotions": ["Prestige Menu 79€"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/Georgio%20Armani%20Caffe2365-min.jpg?itok=pdDF1KwE"
+  },
+  {
+    "idFork": "405",
+    "name": "Maison Rostang",
+    "promotions": ["Menu Prestige 115€ Tout Compris, le midi ! / ", "Menu Prestige 195€ Tout Compris, le soir !"],
+    "stars": 2,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/Cuisses%20de%20grenouille%20en%20habit%20vert%20ail%20doux%20et%20artichauts%20r%C3%B4tis%20coulis%20de%20cresson%20acidul%C3%A93-MaisonRostang-JulieLimont-HD.jpg?itok=9et9Iu76"
+  },
+  {
+    "idFork": "60777",
+    "name": "1912",
+    "promotions": ["20% off food"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/PxRoeeguDogE01gA.jpg?itok=folsjcFF"
+  },
+  {
+    "idFork": "12900",
+    "name": "Pierre Orsi",
+    "promotions": ["Menu Mardis Gourmands 150€"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/5LRN-qsbFpaSeEsA.jpg?itok=ecehGVcm"
+  },
+  {
+    "idFork": "346045",
+    "name": "Yam'Tcha",
+    "promotions": ["-20% off the \"à la carte\" menu!"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/256653_1_0.jpg?itok=l5U7OjVh"
+  },
+  {
+    "idFork": "221",
+    "name": "Le France",
+    "promotions": ["-20% off the \"à la carte\" menu!"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/1_261.jpg?itok=jvks752m"
+  },
+  {
+    "idFork": "28557",
+    "name": "La Grange de Belle-Église",
+    "promotions": ["-30% sur la carte"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/jWTVu4r2Xm-5qaHA.jpg?itok=go6zi1tT"
+  },
+  {
+    "idFork": "310489",
+    "name": "Laurent",
+    "promotions": ["-30% off the \"à la carte\" menu! / ", "-20% off the \"à la carte\" menu!"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/vVQPOc7LpW84_KPQ.jpg?itok=1ONqQsef"
+  },
+  {
+    "idFork": "297223",
+    "name": "Le Restaurant",
+    "promotions": ["-30% off the \"à la carte\" menu!"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/HTTNiiOHKjZgVb4w.jpg?itok=pm-gU__2"
+  },
+  {
+    "idFork": "26201",
+    "name": "Auguste",
+    "promotions": ["Gourmand Menu 118€ All inclusive"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/0tT_q8DtHP2DPXXA.jpg?itok=TkWiVaOE"
+  },
+  {
+    "idFork": "9228",
+    "name": "Le Baudelaire",
+    "promotions": ["-20% off the \"à la carte\" menu! / ", "Menu Gourmands 130€"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/Le%20Baudelaire%20J17_150-Panorama%20copie.jpg?itok=9-jWCxq9"
+  },
+  {
+    "idFork": "275",
+    "name": "Le Meurice Alain Ducasse",
+    "promotions": ["Menu Prestige 225€"],
+    "stars": 2,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/le%20meurice.jpg?itok=MjM2Fywb"
+  },
+  {
+    "idFork": "25896",
+    "name": "Benoit",
+    "promotions": ["Menu Mardis Gourmands 125€"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/5826_1_0.jpg?itok=wbqBWKt0"
+  },
+  {
+    "idFork": "2185",
+    "name": "Antoine",
+    "promotions": ["Menu Mardis Gourmands 109€"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/3S5A2716.jpg?itok=p7sJt2sv"
+  },
+  {
+    "idFork": "36448",
+    "name": "Penati al Baretto",
+    "promotions": ["-20% off the \"à la carte\" menu!"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/Penati3.jpg?itok=o64Fej49"
+  },
+  {
+    "idFork": "3485",
+    "name": "Manoir de la Boulaie",
+    "promotions": ["-20% off the \"à la carte\" menu"],
+    "stars": 2,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/hnSASEwSQa1j42gA.jpg?itok=MsoEvPAR"
+  },
+  {
+    "idFork": "682",
+    "name": "L'Oasis",
+    "promotions": ["-20% off the \"à la carte\" menu! / ", "Menu Mardis Gourmands 125€"],
+    "stars": 2,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/p-SNy5aLyd6rNWJA.jpg?itok=-hosjZtg"
+  },
+  {
+    "idFork": "5020",
+    "name": "La Fourchette du Printemps",
+    "promotions": ["Menu Gourmands 79€"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/rIQMW70WylTJR3HQ.jpg?itok=6WrqAgCM"
+  },
+  {
+    "idFork": "205737",
+    "name": "Le Violon d'Ingres",
+    "promotions": ["Menu \"Prestige\""],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/4_176.jpg?itok=nz36hiqD"
+  },
+  {
+    "idFork": "122",
+    "name": "La Grande Cascade",
+    "promotions": ["-40% off the \"à la carte\" menu"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/2YRLO_xohfHn9mtw.jpg?itok=Tg8B3oUX"
+  },
+  {
+    "idFork": "11295",
+    "name": "Qui plume la Lune",
+    "promotions": ["Menu lunch prestige 90€ tout compris"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/4TTyK98Sc_FiDXng.jpg?itok=TjqR4Jlp"
+  },
+  {
+    "idFork": "2828",
+    "name": "Le Chiberta",
+    "promotions": ["Menu Découverte 110€"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/Chiberta.jpg?itok=nD0RVIqm"
+  },
+  {
+    "idFork": "713",
+    "name": "L'Arôme",
+    "promotions": ["Menu Mardis Gourmands 139€"],
+    "stars": 1,
+    "picture": "https://restaurant.michelin.fr/sites/mtpb2c_fr/files/styles/poi_detail_landscape/public/DSC_2229A.jpg?itok=Xw9xL3hv"
+  }
+]
