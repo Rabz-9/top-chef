@@ -4,7 +4,6 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Requirement](#requirement)
 - [Structure of the project](#structure-of-the-project)
@@ -47,10 +46,10 @@ cd docs\top-chef-app\src
 ```
 
 2. Then launch the Client-Side:
-'''js
+```js
 
 npm start
 
-'''
+```
 
 ## Quick overview of the Client-Side
