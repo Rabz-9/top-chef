@@ -9,6 +9,7 @@
 - [Requirement](#requirement)
 - [Structure of the project](#structure-of-the-project)
 - [Launch the project](#lauch-the-project)
+- [Quick over view of the Client-Side](#quick-overview-of-the-client-side)
 
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -36,10 +37,20 @@ Our web application is split in two part :
 
  ## Launch the project
 
- jdsqkdj
+All the information are stored into JSON file, so you need just to launch the Client-side with React with the following command:  
 
+1. Move to the directory of the React Application
 ```js
-const michelin = require('michelin');
 
-console.log(michelin.get());
+cd docs\top-chef-app\src
+
 ```
+
+2. Then launch the Client-Side:
+'''js
+
+npm start
+
+'''
+
+## Quick overview of the Client-Side
