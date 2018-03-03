@@ -13,11 +13,11 @@
 
 .App-header {
   background-color: #720d14;
-  height: 200px;
+  height: 350px;
   padding: 20px;
   color: white;
   font-style: italic;
-  font-size: 30px;
+  font-size: 50px;
   font-family: 'Allura', cursive;
   font-weight: bold;
   padding-bottom: 0px;
@@ -29,7 +29,7 @@
 }
 
 .App-intro {
-  font-size: 40px;
+  font-size: 60px;
   font-style: italic;
   font-family: 'Tangerine';
 
@@ -77,4 +77,14 @@ body{
 
 .checked {
     color: orange;
+}
+
+a:link, a:visited {
+    background-color: #662121;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius:12px;
 }

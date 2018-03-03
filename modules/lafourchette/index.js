@@ -18,6 +18,7 @@ function getIDFork() {
     let search = contents[i].name;
     let stars = contents[i].stars;
     let picture = contents[i].picture;
+    let city = contents[i].city;
     var url = "https://m.lafourchette.com/api/restaurant-prediction?name=" + encodeURIComponent(search)
     let postalCode = contents[i].postalCode
     request({
@@ -29,7 +30,7 @@ function getIDFork() {
       let tab = [];
       let hasPromo = false; // ///  idFork = callback(contents[i].postalCode);
       if (idFork != undefined) {
-        getDeals(idFork, search , stars , picture);
+        getDeals(idFork, search , stars , picture , city);
 
       }
     });
@@ -44,7 +45,7 @@ function getIdResults(postal_code) {
   }
 }
 
-function getDeals(idFork, name, stars, picture) {
+function getDeals(idFork, name, stars, picture , city) {
   let promo = [];
   request({
     uri: "https://m.lafourchette.com/api/restaurant/" + idFork + "/sale-type",
@@ -58,11 +59,13 @@ function getDeals(idFork, name, stars, picture) {
         restaurant = new Object();
         restaurant.idFork = idFork;
         restaurant.name = name;
+        restaurant.city = city;
         restaurant.promotions = promo;
         restaurant.stars = stars;
-        restaurant.picture = picture
+        restaurant.picture = picture;
+        restaurant.link = "https://www.lafourchette.com/restaurant/" + encodeURIComponent(name) + "/" + idFork;
         const document = JSON.stringify(restaurant);
-        fs.appendFileSync("./RestaurantForkWithPicture.json", document + "\r\n", null, 'utf8', (err) => {
+        fs.appendFileSync("./RestaurantForkV3.json", document + "\r\n", null, 'utf8', (err) => {
           if (err) console.log(err)
         });
       }

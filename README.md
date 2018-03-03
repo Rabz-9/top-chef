@@ -41,7 +41,7 @@ All the information are stored into JSON file, so you need just to launch the Cl
 1. Move to the directory of the React Application
 ```js
 
-cd docs\top-chef-app\src
+cd docs/top-chef-app/src
 
 ```
 
@@ -53,3 +53,17 @@ npm start
 ```
 
 ## Quick overview of the Client-Side
+
+* Home Page :
+
+![Alt text](https://github.com/Rabz-9/top-chef/tree/master/img/screen1.png)
+
+* Restaurant Cards :
+
+![Alt text](https://github.com/Rabz-9/top-chef/tree/master/img/screen2.png)
+
+![Alt text](https://github.com/Rabz-9/top-chef/tree/master/img/screen3.png)
+
+* Result when we click on **"Book now" ** :
+
+![Alt text](https://github.com/Rabz-9/top-chef/tree/master/img/screen4.png)

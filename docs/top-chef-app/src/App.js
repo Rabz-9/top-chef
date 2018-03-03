@@ -3,7 +3,7 @@ import React, {
 } from 'react';
 import tag from './tag.png';
 import './App.css';
-import RestaurantFork from './RestaurantForkWithPicture.json';
+import RestaurantFork from './RestaurantForkV3.json';
 
 class App extends Component {
 
@@ -48,8 +48,10 @@ class App extends Component {
           <img src = {restaurant.picture} alt="logo" className = "logoRestaurant"/>
           <div className="container">
           <h3> {restaurant.name} </h3>
+          <h4> {restaurant.city}</h4>
           <div>{this.displayStars(restaurant.stars) }</div>
           <p><img src = {tag} alt="discountRestaurant" className="discountRestaurant"/>  {restaurant.promotions}</p>
+          <a className="Booking" href={restaurant.link}>Book now !</a>
           </div>
           < /div>
         })
