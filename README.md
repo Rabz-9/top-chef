@@ -56,14 +56,14 @@ npm start
 
 * Home Page :
 
-![Alt tag](https://github.com/Rabz-9/top-chef/tree/master/img/screen1.png "Screen1")
+![alt tag](https://github.com/Rabz-9/top-chef/tree/master/img/screen1.png "Screen1")
 
 * Restaurant Cards :
 
-![Alt tag](https://github.com/Rabz-9/top-chef/tree/master/img/screen2.png "Screen2")
+![alt tag](https://github.com/Rabz-9/top-chef/tree/master/img/screen2.png "Screen2")
 
-![Alt tag](https://github.com/Rabz-9/top-chef/tree/master/img/screen3.png "Screen3")
+![alt tag](https://github.com/Rabz-9/top-chef/tree/master/img/screen3.png "Screen3")
 
 * Result when we click on **"Book now" ** :
 
-![Alt text](https://github.com/Rabz-9/top-chef/tree/master/img/screen4.png "Screen4")
+![alt text](https://github.com/Rabz-9/top-chef/tree/master/img/screen4.png "Screen4")
