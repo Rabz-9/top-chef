@@ -64,6 +64,6 @@ npm start
 
 ![alt text](/img/screen3.png "Screen3")
 
-* Result when we click on **"Book now" ** :
+* Result when we click on **"Book now"** :
 
 ![alt text](/img/screen4.png "Screen4")
